@@ -11,3 +11,17 @@ variable "public_subnet_count" {
   description = "default"
   default = 2
 }
+
+
+variable "vpc_cidr" {
+  type = string
+  default = "11.0.0.0/16"
+  description = "Main vpc cidr block"
+  
+}
+
+variable "private_subnet_count" {
+  type = number
+  description = "Private subnet count"
+  default = 2  
+}
